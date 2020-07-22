@@ -1,0 +1,27 @@
+.border{
+    width:25%;
+    background-color:gray;
+    margin:auto;
+    border:10px solid gray;
+    border-top: 5px solid black;
+       }
+.todoitem{
+    background-color:black;
+    
+    width:25%; 
+    margin:auto;
+    border:10px solid gray;
+   
+}
+.subheading{
+display:flex;
+flex-direction: row;
+justify-content: space-between;
+}
+html{
+
+background-color:#A9A9A9;
+}
+
+    
+    

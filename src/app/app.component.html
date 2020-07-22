@@ -1,0 +1,55 @@
+
+<div class="border">
+   <div class="title">
+    <h3>Todomaker</h3>
+  </div>
+</div>
+
+<div class="todoitem">
+<div class="subheading">
+  <div class="currentdate">
+   <p><b>{{datevalue}}</b></p>
+  </div>
+    <div class="currentday">
+     <h4><i>{{day}}</i></h4>
+    </div>
+</div>  
+
+  <div class="progress-bar" >
+   <progress [value]="itemscompleted.length" [max]="items.length+itemsdolater.length+itemscompleted.length"> </progress>
+  </div>
+
+  
+  <div class="elements">
+    <div class="additem">
+      <label><u><i>Add a new Item: </i></u></label>
+      <input type="text" [(ngModel)]=foobar>
+      <button (click)="additems()"  [disabled]="!foobar"><i class="fa fa-plus-circle"></i></button>
+     
+     <p *ngFor="let i of items ; let j=index"> {{ i }} 
+      
+      <button (click)="trash()"class="btn" ><i class="fa fa-close"></i></button>
+      <button id="yellow"(click)="pause(j)"><i class="fa fa-pause"></i></button>
+      
+      <button id="tick" (click)="done(j)" ><b>✓</b></button>
+      
+      
+     </p>
+    </div><br>
+
+
+    <div class="dolater">
+     <label><u><i>Do Later</i></u></label>
+         <p *ngFor = "let k of itemsdolater">{{ k }} </p>
+    </div>
+    <br>
+    
+    <div class="completed">
+     <label><u><i>Completed</i></u></label>
+          <p *ngFor = "let k of itemscompleted">{{ k }} </p>
+    </div>
+    <br>
+
+    <input id="center" type="button" (click)="reset()"value="Reset Progress">
+  </div><br>
+</div>

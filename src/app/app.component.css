@@ -1,0 +1,75 @@
+   .title{
+    display: flex;
+   justify-content: center;
+    font-size:medium;
+}
+
+.buttons{
+    display: flex;
+    margin-left: 20px; 
+}
+
+.btn{
+    color: red;
+    background: transparent;
+}
+progress{
+    background-color:grey;
+    height:10px;
+    
+}
+.currentdate{
+    color:aqua;
+display:flex;
+margin-left: 30px; 
+}
+label{
+    color:white
+}
+#yellow{
+    color:yellowgreen;
+    background-color: gray;
+    
+}
+#tick{
+    color:green;
+    background-color: gray;
+    height:23px;
+
+}
+.currentday{
+    color:aqua;
+margin-right: 30px; 
+}
+
+button{
+    float: right;
+}
+
+
+.progress-bar{
+    margin-left: 20px;
+    padding:5px;
+}
+h3{
+    text-align:center;
+}
+
+.additem{
+    background-color:gray;
+    padding:5px; 
+}
+
+.dolater{
+    background-color:gray;
+    padding:5px;
+    }
+
+.completed{
+    background-color:gray;
+    padding:5px;
+    }
+#center{
+    margin-left: 35%;
+    background-color:khaki;
+ }
